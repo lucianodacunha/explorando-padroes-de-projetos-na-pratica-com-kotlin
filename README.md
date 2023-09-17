@@ -2,8 +2,8 @@
 
 ## Desafios de Código
 
-- Singleton: permite garantir que uma classe tenha somente uma instância.
-- Builder: cria objetos complexos passo a passo.
+- Singleton
+- Builder
 - Adapter
 - Extension Function
 - Processamento Paralelo/Assíncrono

@@ -1,4 +1,4 @@
-package net.lucianodacunha.patterns.builder
+package io.github.lucianodacunha.patterns.builder
 
 class Product(val name: String, val price: Double, val quantity: Int)
 
@@ -22,7 +22,9 @@ class CustomOrder private constructor(
             //TODO: Instancie corretamente um CustomOrder, consolidando o Builder!
             var totalOrder = 0.0
             for (product in this.products){
-                totalOrder += product.price
+                for (i in 1..product.quantity){
+                    totalOrder += product.price
+                }
             }
             return CustomOrder(customerName, products, totalOrder, deliveryAddress)
         }

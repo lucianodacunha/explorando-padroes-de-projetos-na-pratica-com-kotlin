@@ -1,4 +1,4 @@
-package net.lucianodacunha.patterns.singleton
+package io.github.lucianodacunha.patterns.singleton
 
 class User(val id: Int, val name: String)
 
